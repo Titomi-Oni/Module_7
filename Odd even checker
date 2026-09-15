@@ -1,0 +1,53 @@
+from tkinter import *
+from tkinter import messagebox
+
+root = Tk()
+root.geometry("300x500")
+
+def check_number():
+  try:
+      number = int(entry_number.get())
+
+      if number % 2 ==0:
+          result_label.config(text="Result: Even")
+      else:
+          result_label.config(text="Result: Odd")
+
+  except ValueError:
+        messagebox.showerrot(
+              "Error",
+              "Please Enter A Vaild Number."
+              )
+
+heading = Label(
+    root,
+    text="Even / Odd Checker",
+    font=("Arial", 16)
+)
+heading.pack(pady=20)
+
+number_label = Label(
+    root,
+    text="Enter Number:"
+)
+number_label.pack()
+
+entry_number = Entry(root)
+entry_number.pack(pady=5)
+
+button = Button(
+    root,
+    text="Check",
+    command=check_number
+)
+button.pack(pady=10)
+
+result_label = Label(
+    root,
+    text="Result:",
+    font=("Arial",12)
+)
+
+result_label.pack(pady=10)
+
+root.mainloop()
