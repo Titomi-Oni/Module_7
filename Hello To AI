@@ -1,0 +1,45 @@
+print("Hello! I am an AI ChatBot! What's your name?")
+
+name = input()
+print (f"Hello,{name}! Nice to meet you!")
+
+print("How has your day been? (good/okay/bad)")
+mood = input().lower()
+
+if mood == "good":
+    print("Yay! Im glad to hear that.")
+
+elif mood == "okay":
+    print("Just a normal day. I get you!")
+
+elif mood =="bad":
+    print ("Aah, I see. I hope it gets better!")
+
+else:
+    print("Sometimes putting feelings into words can be quite hard.")
+
+print("Do you prefer dogs or cats?")
+animal = input().lower()
+
+if animal == "dogs":
+    print("Dogs are friendly and cuddly! I can see why you prefer them!")
+
+elif mood == "cats":
+    print("Cats are pretty, cool and awesome! I can see why you prefer them! ")
+
+else:
+    print("You cant pick? Thats tottally understandable!")
+
+print("How has your health been lately? (great/normal/bad)")
+health = input().lower()
+
+if health == "great":
+    print("Im glad your doing great! Keep it up!")
+
+elif health == "normal":
+    print("Awesome! Keeping your health balanced is very important! Good job!")
+
+else:
+    print("Im sorry thats happening. I hope your health can improve!")
+    
+print(f"I was nice chatting with you {name}. See you later!")
